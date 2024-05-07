@@ -4,7 +4,7 @@
     let hasPosition = [];
     let barrage = function(opt) {
         let defaultOpt = {
-            max_dm_count: 3, 
+            max_dm_count: 10, 
             channel_count: 2,
             allow_repeat: 0, 
             danmuPool: [],

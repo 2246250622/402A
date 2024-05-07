@@ -19,7 +19,7 @@ Partial Public Class bulletchat1
         Using conn As New SqlConnection(ConnectionString)
             Try
                 conn.Open()
-                Dim sql As String = "SELECT TOP 15 MessageText, SenderName, RecipientName FROM Messages ORDER BY CreatedAt DESC"
+                Dim sql As String = "SELECT TOP 8 MessageText, SenderName, RecipientName FROM Messages ORDER BY CreatedAt DESC"
                 Using cmd As New SqlCommand(sql, conn)
                     Using reader As SqlDataReader = cmd.ExecuteReader()
                         While reader.Read()
